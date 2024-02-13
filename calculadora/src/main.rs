@@ -23,7 +23,7 @@ fn main() {
             _ => println!("Opción no válida"),
         }
     }
-}
+} 
 
 fn mostrar_menu(){
     println!("Opciones de Calculadora");
@@ -32,4 +32,24 @@ fn mostrar_menu(){
     println!("3. Multiplicar");
     println!("4. Dividir");
     println!("0. Terminar")
+}
+
+fn sumar(sum1: u32, sum2: u32){
+    let suma = sum1 + sum2;
+    println!("La suma de {} y {} es: {}",sum1, sum2, suma)
+}
+
+fn restar(sum1: u32, sum2: u32){
+    let suma = sum1 - sum2;
+    println!("La resta de {} y {} es: {}",sum1, sum2, suma)
+}
+
+fn multiplicar(sum1: u32, sum2: u32){
+    let suma = sum1 * sum2;
+    println!("El producto de {} y {} es: {}",sum1, sum2, suma)
+}
+
+fn dividir(sum1: u32, sum2: u32){
+    let suma = sum1 / sum2;
+    println!("La division de {} y {} es: {}",sum1, sum2, suma)
 }
